@@ -129,29 +129,25 @@ document.addEventListener("DOMContentLoaded", init);
 $('#item1').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorRed.svg)',
-    'transform': 'scale(2.5)',
+    'transform': 'scale(2.5) translate(31%, 31%)',
   })
 })
-
 $('#item2').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorOrange.svg)',
-    'transform': 'scale(2.5)',
+    'transform': 'scale(2.5) translate(31%, 31%)',
   })
 })
-
 $('#item3').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorBlue.svg)',
-    'transform': 'scale(2.5)',
+    'transform': 'scale(2.5) translate(31%, 31%)',
   })
 })
-
-
 $('#item4').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorYellow.svg)',
-    'transform': 'scale(2.5)',
+    'transform': 'scale(2.5) translate(31%, 31%)',
   })
 })
 $('.title').hover(function (){
@@ -166,19 +162,16 @@ gsap.from(".card", 1, {
   opacity: 0,
   ease: Expo.easeInOut,
 });
-
 gsap.from(".name", 1, {
   opacity: 0,
   ease: Expo.easeInOut,
   delay: 1,
 });
-
 gsap.from(".nav", 2, {
   opacity: 0,
   ease: Expo.easeInOut,
   delay: 1,
 });
-
 gsap.from(".title", 1, {
   opacity: 0,
   ease: Expo.easeInOut,
