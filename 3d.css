@@ -22,8 +22,128 @@ body {
   overflow-y: scroll;
 }
 
+.menu-tog {
+  position: fixed;
+  transition: 0.1s;
+  top: 7vh;
+  right: 4vw;
+  width: 6vw;
+  height: 4vh;
+  z-index: 8;
+}
+.menu-tog.active p:nth-child(1) {
+  color: #FFFFFF;
+}
+
+.mainMenu {
+  position: fixed;
+  transition: 0.5s;
+  top: 7vh;
+  left: 6vw;
+  z-index: 8;
+}
+.prev {
+  transform: scale(1.4);
+  width: 6vw;
+  height: 4vh;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(images/redArrow.svg);
+}
+.nav.active {
+  display: none;
+}
+.info-text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 7;
+  opacity: 0;
+  transition: 0.5s;
+}
+.black{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.menu.active {
+  display: flex;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.menu .links{
+  position: absolute;
+  bottom: 22%;
+  left: 10%;
+  height: 58vh;
+  width: 55vw;
+}
+.menu .links ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.links a{
+  text-decoration: none;
+  font-size: 5.2vw;
+}
+
+#evn a{
+  color: #FFFFFF;
+  width: 35vw
+}
+#exc a{
+  color: #FFFFFF;
+  width: 32vw
+}
+#wrk a{
+  color: #FFFFFF;
+  width: 40vw
+}
+#shp a{
+  color: #FFFFFF;
+  width: 40vw
+}
+
+p{
+  font-size: 1.5vw;
+  color: #FC565D;
+  font-family: NeutralFace;
+}
+
+a{
+  font-family: NeutralFace-Bold;
+  text-decoration: underline;
+  text-align: center;
+  color: #FDB157;
+  z-index: 8;
+  margin: 0.5vh;
+  font-size: 2vw;
+}
+.cursor{
+  z-index: 7;
+  position:fixed;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  transition: 0.1s;
+}
+
+
 .menuPoints{
-  z-index: 10;
+  z-index: 5;
   position: fixed;
   display: flex;
   width: 100vw;
@@ -51,6 +171,7 @@ h2{
   font-family: 'NeutralFace';
 }
 .points{
+  z-index: 10;
   display: flex;
   width: 12vw;
   height: 5vh;
@@ -61,15 +182,15 @@ h2{
   justify-content: space-evenly;
 }
 .pointRed{
-  width: 1vw;
-  height: 1vw;
+  width: 1.1vw;
+  height: 1.1vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(images/redPoint.svg);
 }
 .point{
-  width: 1vw;
-  height: 1vw;
+  width: 1.1vw;
+  height: 1.1vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(images/Point.svg);
