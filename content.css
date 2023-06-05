@@ -362,9 +362,7 @@ p{
 
 a{
   font-family: NeutralFace-Bold;
-  text-decoration: underline;
   text-align: center;
-  color: #FDB157;
   z-index: 8;
   margin: 0.5vh;
   font-size: 2vw;
@@ -376,6 +374,11 @@ a{
   height: 75vmax;
   width: 95vmax;
   position: relative;
+}
+
+#gallery a{
+  text-decoration: underline;
+  color: #FDB157;
 }
 
 .block {

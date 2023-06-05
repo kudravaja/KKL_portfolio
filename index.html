@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KKL 4 session</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKL loading</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -14,74 +14,149 @@
     <script type="text/javascript"></script>
   </head>
   <body>
-    <div class="menu-tog">
-       <p>Меню</p>
-   </div>
-
-   <div class="menu">
-     <div class="black"> </div>
-       <div class="links">
-           <ul>
-               <li class="menu-wrap" id="exc"><a href="#">Экскурсия по школе</a></li>
-               <li class="menu-wrap" id="wrk"><a href="#">работы куриц</a></li>
-               <li class="menu-wrap" id="evn"><a href="#">ближайшие мероприятия</a></li>
-               <li class="menu-wrap" id="shp"><a href="#">магазин мерча</a></li>
-           </ul>
-       </div>
-   </div>
-  <div class="contacts-tog">
-           <p>Контакты</p>
-   </div>
-     <div class="contacts">
-       <div class="white"> </div>
-         <div class="links">
-             <ul>
-                 <li class="contacts-cover" id="dribbble"><a href="#">dribbble</a></li>
-                 <li class="contacts-cover" id="behance"><a href="#">behance</a></li>
-                 <li class="contacts-cover" id="hse"><a href="#">hse</a></li>
-                 <li class="contacts-cover" id="inst"><a href="#">@Kudravaja</a></li>
-             </ul>
-         </div>
-     </div>
-
-    <div class="card-slider">
-      <div class="nav">
-        <div class="prev"></div>
-        <div class="next"></div>
-      </div>
-      <div class="items">
-        <div class="item">
-          <div class="card">
-            <img class="card-bg" src="./images/ChickenRed.png" id="item1">
-            <p class="name" id="nExcursion">Экскурсия по школе</p>
-          </div>
-          <p class="title"><span class="excursion">экс кур сия</span></p>
+    <div class="container">
+      <button class="btn">Что за школа?</button>
+      <div class="text-container"></div>
+      <div class="text-wrapper">
+        <div class="text-loading">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
         </div>
-        <div class="item">
-          <p class="title"><span class="works">раб оты</span></p>
-          <div class="card">
-              <img class="card-bg" src="./images/ChickenOrange.png" id="item2">
-              <p class="name" id="nWorks">Работы куриц</p>
-          </div>
+        <div class="text-loading">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
         </div>
-        <div class="item">
-          <p class="title"><span class="events">собы -тия</span></p>
-          <div class="card" id="cardBlue">
-            <img class="card-bg" src="./images/ChickenBlue.png" id="item3">
-            <p class="name" id="nEvents">Ближайшие мероприятия</p>
-          </div>
+        <div class="text-loading">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
         </div>
-        <div class="item">
-          <p class="title"><span class="shop">мага -зин</span></p>
-          <div class="card">
-            <img class="card-bg" src="./images/ChickenYellow.png" id="item4">
-            <p class="name" id="nShop">Магазин мерча</p>
-          </div>
+        <div class="text-loading">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+        </div>
+        <div class="text-loading">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
         </div>
       </div>
     </div>
-    <div class="cursor"> </div>
-    <script src="sketch.js"> </script>
-    <script src="menu.js"> </script>
+
+    <script>
+      const btn = document.querySelector(".btn");
+
+      btn.addEventListener("click", function () {
+        gsap.to(".btn", 1, {
+          opacity: 0,
+          y: -40,
+          ease: Expo.easeInOut,
+        });
+
+        gsap.to(".text-wrapper> div", 1, {
+          x: "400",
+          ease: Expo.easeInOut,
+          delay: 0.5,
+          stagger: 0.4,
+          opacity: 1,
+        });
+
+        gsap.to(".text-wrapper", 3, {
+          y: -400,
+          scale: 3.5,
+          rotate: -90,
+          ease: Expo.easeInOut,
+          delay: 1.5,
+        });
+
+        gsap.to(".text", 1, {
+          opacity: 1,
+          ease: Expo.easeInOut,
+          delay: 3.5,
+        });
+
+        gsap.to(".text-wrapper> div", 4, {
+          x: "-3700",
+          ease: Expo.easeInOut,
+          delay: 2.5,
+          stagger: 0.05,
+        });
+
+        gsap.to(".text-container", 2, {
+          bottom: "-100%",
+          ease: Expo.easeInOut,
+          delay: 5,
+        });
+      });
+
+      $('.btn').click(function(){
+          setTimeout(function () {
+          window.location.replace('main.html');
+        }, 4850)
+      });
+    </script>
   </body>
 </html>
