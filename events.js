@@ -13,9 +13,6 @@ let scrollPos = 1;
 let contentHover = false;
 let req;
 let images = [...document.querySelectorAll('.imgdiv')];
-// images.forEach((image, idx) => {
-//     image.style.backgroundImage = `url(./images/${idx+1}.jpg)`
-// })
 
 imgSections.forEach(item => {
   let clone = item.cloneNode(true);
