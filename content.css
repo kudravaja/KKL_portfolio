@@ -1,3 +1,65 @@
+/* 404 */
+.bg{
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.text404{
+  left: 3vw;
+  top: 3vh;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5vw;
+  color: #000000;
+  font-family: NeutralFace;
+}
+.Text404{
+  line-height: 1.2;
+  right: 3vw;
+  bottom: 3vh;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5vw;
+  color: #000000;
+  font-family: NeutralFace;
+}
+.bold{
+  font-family: NeutralFace-Bold;
+}
+.image404{
+  z-index: 1;
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+}
+
+.img404{
+  z-index: 0;
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+}
+
+.draggable {
+  width: 40vw;
+  height: 40vw;
+  left: 55vw;
+  bottom: 70vh;
+  position: absolute;
+}
+
+.droppable {
+  position: absolute;
+  width: 35vw;
+  height: 35vh;
+  left: 32vw;
+  top: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* loading */
 .img {
   width: 15vw;
@@ -44,7 +106,11 @@
   opacity: 0;
 }
 /* main screen */
-
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .menu-tog {
   position: fixed;
   transition: 0.1s;
