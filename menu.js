@@ -40,10 +40,17 @@ function toggleWrap(wrap, active){
 }
 
 let cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.pageX + 'px';
-  cursor.style.top = e.pageY + 'px';
-})
+// document.addEventListener('mousemove', (e) => {
+//   cursor.style.left = e.pageX + 'px';
+//   cursor.style.top = e.pageY + 'px';
+// })
+
+$( document ).on( "mousemove", function( event ) {
+  let y = event.pageY - $(window).scrollTop();
+  console.log(y);
+  $(cursor).css( "left", event.pageX);
+  $(cursor).css( "top", `${y}px`);
+});
 
 $('#exc').hover(function (){
   $('.cursor').css({
@@ -69,15 +76,21 @@ $('#shp').hover(function (){
     'transform': 'scale(2.5) translate(31%, 31%)',
   })
 })
-$('.title, #gallery, .step, .bc').hover(function (){
+$('.title, #gallery, .bc').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorBlack.svg)',
     'transform': 'scale(1) translate(31%, 31%)',
   })
 })
-$('.black').hover(function (){
+$('.black, .blackbg').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorWhite.svg)',
-    'transform': 'scale(1)',
+    'transform': 'scale(1) translate(10%, 10%)',
+  })
+})
+$('.step').hover(function (){
+  $('.cursor').css({
+    'backgroundImage': 'url(images/cursorScroll.svg)',
+    'transform': 'scale(2.5)',
   })
 })

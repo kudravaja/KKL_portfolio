@@ -1,5 +1,4 @@
 // main screen
-
 function init() {
   let current = 0;
   let directionForward = true;
@@ -104,7 +103,6 @@ function init() {
     setTimeout(function () {
       animate.in(items[current]);
     }, 550);
-    console.log(current);
   }
   function prev() {
     if (directionForward) {
@@ -115,7 +113,6 @@ function init() {
     setTimeout(function () {
       animate.in(items[current]);
     }, 550);
-    console.log(current);
   }
 
   nextBtn.addEventListener("click", next);
