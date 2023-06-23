@@ -40,47 +40,6 @@ function toggleWrap(wrap, active){
 }
 
 
-// contacts
-let conTog = document.querySelector('.contacts-tog');
-let con = document.querySelector('.contacts');
-let conCov = [...document.querySelectorAll('.contacts-cover')];
-
-conTog.addEventListener('click', toggleCon)
-
-function toggleCon(){
-    if(menu.classList.contains('active')){
-        conTog.classList.remove('active');
-        toggleConWraps(false);
-        setTimeout(() => {
-            con.classList.remove('active')
-        }, 300)
-    }else{
-        conTog.classList.add('active');
-        setTimeout(() => {
-            con.classList.add('active')
-        }, 300)
-        setTimeout(() => {
-            toggleConWraps(true);
-        }, 300)
-    }
-}
-
-function toggleConWraps(active){
-    conCov.forEach(cover => {
-        toggleCover(cover, active);
-    })
-}
-
-function toggleCover(cover, active){
-    setTimeout(() => {
-        if(active){
-            cover.classList.add('active');
-        }else{
-            cover.classList.remove('active');
-        }
-    })
-}
-
 let cursor = document.querySelector('.cursor');
 // document.addEventListener('mousemove', (e) => {
 //   cursor.style.left = e.pageX + 'px';
