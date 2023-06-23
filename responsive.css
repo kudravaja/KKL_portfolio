@@ -227,8 +227,8 @@
   }
   h1 {
     font-size: 3vw;
-    width: 40vw;
-    left: 30vw;
+    width: 4vw;
+    left: 3vw;
   }
   .nav .prev{
     width: 12vw;
@@ -316,5 +316,9 @@
     top: 16vh;
     left: 9.5vw;
     width: 38vw;
+  }
+  .cursor{
+    height: 8vw;
+    width: 8vw;
   }
 }
