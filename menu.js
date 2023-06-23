@@ -90,6 +90,6 @@ $('.black, .blackbg, .redMenu, .orgMenu, .blueMenu, .yelMenu').hover(function ()
 $('.step').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorScroll.svg)',
-    'transform': 'scale(2.5)',
+    'transform': 'scale(1.5)',
   })
 })
