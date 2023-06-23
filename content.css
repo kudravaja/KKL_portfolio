@@ -184,6 +184,10 @@ html,body{
   pointer-events: none;
   transition: 0.5s;
 }
+.contacts.active {
+  pointer-events: all;
+  opacity: 1;
+}
 .white{
   position: absolute;
   width: 100vw;
@@ -779,11 +783,10 @@ a{
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 2;
-  align-items: center;
+  z-index: 3;
   background-size: cover;
   background-position: center;
-  background-image: url(./images/chickens/hurray.png);
+  background-image: url(./images/chickens/hurray.svg);
   display: none;
 }
 #chick{
