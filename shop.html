@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>магазин</title>
   <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -20,11 +21,19 @@
        <div class="black"> </div>
          <div class="links">
              <ul>
-               <li class="menu-wrap" id="exc"><a href="lounge.html">Экскурсия по школе</a></li>
-               <li class="menu-wrap" id="wrk"><a href="gallery.html">работы куриц</a></li>
-               <li class="menu-wrap" id="evn"><a href="events.html">ближайшие мероприятия</a></li>
-               <li class="menu-wrap" id="shp"><a href="shop.html">магазин мерча</a></li>
-             </ul>
+               <div class="redMenu">
+                 <li class="menu-wrap" id="exc"><a href="lounge.html">Экскурсия по школе</a></li>
+               </div>
+               <div class="orgMenu">
+                 <li class="menu-wrap" id="wrk"><a href="gallery.html">работы куриц</a></li>
+               </div>
+                <div class="blueMenu">
+                 <li class="menu-wrap" id="evn"><a href="events.html">ближайшие мероприятия</a></li>
+               </div>
+                <div class="yelMenu">
+                 <li class="menu-wrap" id="shp"><a href="shop.html">магазин мерча</a></li>
+                </div>
+            </ul>
          </div>
      </div>
     <div class="mainMenu">
@@ -70,6 +79,7 @@
         <option value="">другое</option>
       </select>
       <input type="tov" placeholder="Товары которые вы хотите заказать">
+      <p>В подарок можно выйграть книгу, если найти курицу!! Ну что? <a href="game.html">Попробуем?</a></p>
       <button type="submit" name="button">Заказать</button>
     </form>
     </div>

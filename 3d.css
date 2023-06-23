@@ -1,11 +1,3 @@
-@font-face {
-    font-family: NeutralFace-Bold;
-    src: url(fonts/NeutralFace-Bold.otf); }
-
-@font-face {
-    font-family: NeutralFace;
-    src: url(fonts/NeutralFace.otf); }
-
 * {
   padding: 0;
   margin: 0;
@@ -83,8 +75,6 @@ body {
 
 .menu .links{
   position: absolute;
-  bottom: 22%;
-  left: 10%;
   height: 58vh;
   width: 55vw;
 }
@@ -97,24 +87,105 @@ body {
 
 .links a{
   text-decoration: none;
-  font-size: 5.2vw;
+  font-size: 3.5vw;
+  text-align: left;
+}
+.blueMenu{
+  transform: rotate(-45deg);
+  top: 10vh;
+  left: 60vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.blueMenu:hover{
+  background-image: url("./images/blueMenu.svg");
+  transition: 0.5s;
+}
+#evn a{
+  transform: rotate(37deg);
+  top: 26vh;
+  left: 3vw;
+  position: absolute;
+  color: #FFFFFF;
+  width: 25vw;
 }
 
-#evn a{
-  color: #FFFFFF;
-  width: 35vw
+.redMenu{
+  transform: rotate(45deg);
+  top: -11vh;
+  left: 15vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.redMenu:hover{
+  background-image: url("./images/redMenu.svg");
+  transition: 0.5s;
 }
 #exc a{
+  transform: rotate(-37.5deg);
+  top: 25vh;
+  left: 21vw;
+  position: absolute;
   color: #FFFFFF;
-  width: 32vw
+  width: 25vw;
+}
+
+.orgMenu{
+  top: 43vh;
+  left: -6vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.orgMenu:hover{
+  background-image: url("./images/orgMenu.svg");
+  transition: 0.5s;
 }
 #wrk a{
+  transform: rotate(-90deg);
+  top: 27vh;
+  left: 9vw;
+  position: absolute;
   color: #FFFFFF;
-  width: 40vw
+  width: 31vw;
+}
+.yelMenu{
+  transform: rotate(135deg);
+  top: 51vh;
+  left: 41vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.yelMenu:hover{
+  background-image: url("./images/yelMenu.svg");
+  transition: 0.5s;
 }
 #shp a{
+  transform: rotate(-90deg);
+  top: 27vh;
+  left: 8vw;
+  position: absolute;
   color: #FFFFFF;
-  width: 40vw
+  width: 33vw;
 }
 
 p{

@@ -196,16 +196,9 @@ html,body{
   left: 6vw;
   z-index: 8;
 }
-.contacts.active {
-  z-index: 8;
-  pointer-events: all;
-  opacity: 1;
-}
 
 .menu .links{
   position: absolute;
-  bottom: 22%;
-  left: 10%;
   height: 58vh;
   width: 55vw;
 }
@@ -234,24 +227,105 @@ html,body{
 
 .links a{
   text-decoration: none;
-  font-size: 5.2vw;
+  font-size: 3.5vw;
+  text-align: left;
+}
+.blueMenu{
+  transform: rotate(-45deg);
+  top: 10vh;
+  left: 60vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.blueMenu:hover{
+  background-image: url("./images/blueMenu.svg");
+  transition: 0.5s;
+}
+#evn a{
+  transform: rotate(37deg);
+  top: 26vh;
+  left: 3vw;
+  position: absolute;
+  color: #FFFFFF;
+  width: 25vw;
 }
 
-#evn a{
-  color: #FFFFFF;
-  width: 35vw
+.redMenu{
+  transform: rotate(45deg);
+  top: -11vh;
+  left: 15vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.redMenu:hover{
+  background-image: url("./images/redMenu.svg");
+  transition: 0.5s;
 }
 #exc a{
+  transform: rotate(-37.5deg);
+  top: 25vh;
+  left: 21vw;
+  position: absolute;
   color: #FFFFFF;
-  width: 32vw
+  width: 25vw;
+}
+
+.orgMenu{
+  top: 43vh;
+  left: -6vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.orgMenu:hover{
+  background-image: url("./images/orgMenu.svg");
+  transition: 0.5s;
 }
 #wrk a{
+  transform: rotate(-90deg);
+  top: 27vh;
+  left: 9vw;
+  position: absolute;
   color: #FFFFFF;
-  width: 40vw
+  width: 31vw;
+}
+.yelMenu{
+  transform: rotate(135deg);
+  top: 51vh;
+  left: 41vw;
+  position: absolute;
+  width: 50vw;
+  height: 61vh;
+  background-image: url("./images/whMenu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.yelMenu:hover{
+  background-image: url("./images/yelMenu.svg");
+  transition: 0.5s;
 }
 #shp a{
+  transform: rotate(-90deg);
+  top: 27vh;
+  left: 8vw;
+  position: absolute;
   color: #FFFFFF;
-  width: 40vw
+  width: 33vw;
 }
 
 #dribbble a{
@@ -440,9 +514,8 @@ a{
   font-size: 2vw;
 }
 #gallery {
-  /* height: 200vh;
-  width: 200vw; */
-  height: 75vmax;
+  bottom: 15vh;
+  height: 81vmax;
   width: 95vmax;
   position: relative;
 }
@@ -700,4 +773,147 @@ a{
   right: 65%;
   background: url("./images/40.jpg") no-repeat;
   background-size: cover;
+}
+.hurray{
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/chickens/hurray.png);
+  display: none;
+}
+#chick{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/1.svg");
+}
+#chick2{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/2.svg");
+}
+#chick3{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/3.svg");
+}
+#chick4{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/4.svg");
+}
+#chick5{
+  z-index: 2;
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/5.svg");
+}
+#chick6{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/6.svg");
+}
+#chick7{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/7.svg");
+}
+#chick8{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/8.svg");
+}
+#chick9{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/9.svg");
+}
+#chick10{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/10.svg");
+}
+#chick11{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/11.svg");
+}
+#chick12{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/12.svg");
+}
+#chick13{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/13.svg");
+}
+#chick14{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/14.svg");
+}
+#chick15{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("./images/chickens/15.svg");
+}
+.chickens{
+  flex-flow: column;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  bottom: 5vh;
+  justify-content: space-evenly;
 }

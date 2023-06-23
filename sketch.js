@@ -1,4 +1,3 @@
-// main screen
 function init() {
   let current = 0;
   let directionForward = true;
@@ -173,4 +172,86 @@ gsap.from(".title", 1, {
   opacity: 0,
   ease: Expo.easeInOut,
   delay: 0.5,
+});
+
+$(document).ready( function() {
+  $("#chick").on("click",function() {
+    $("#chick").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick2").on("click",function() {
+    $("#chick2").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick3").on("click",function() {
+    $("#chick3").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick4").on("click",function() {
+    $("#chick4").css("display", "none");
+  });
+});
+let clickCounter=0;
+$(document).ready( function() {
+  $("#chick5").on("click",function() {
+    clickCounter++;
+    if (clickCounter==2) {
+     $(".hurray").css('display', 'block');
+    }
+    $("#chick5").css('background-image', 'url(./images/chickens/chicken.svg)');
+  });
+});
+
+$(document).ready( function() {
+  $("#chick6").on("click",function() {
+    $("#chick6").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick7").on("click",function() {
+    $("#chick7").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick8").on("click",function() {
+    $("#chick8").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick9").on("click",function() {
+    $("#chick9").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick10").on("click",function() {
+    $("#chick10").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick11").on("click",function() {
+    $("#chick11").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick12").on("click",function() {
+    $("#chick12").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick13").on("click",function() {
+    $("#chick13").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick14").on("click",function() {
+    $("#chick14").css("display", "none");
+  });
+});
+$(document).ready( function() {
+  $("#chick15").on("click",function() {
+    $("#chick15").css("display", "none");
+  });
 });

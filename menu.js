@@ -47,7 +47,6 @@ let cursor = document.querySelector('.cursor');
 
 $( document ).on( "mousemove", function( event ) {
   let y = event.pageY - $(window).scrollTop();
-  console.log(y);
   $(cursor).css( "left", event.pageX);
   $(cursor).css( "top", `${y}px`);
 });
@@ -82,7 +81,7 @@ $('.title, #gallery, .bc').hover(function (){
     'transform': 'scale(1) translate(31%, 31%)',
   })
 })
-$('.black, .blackbg').hover(function (){
+$('.black, .blackbg, .redMenu, .orgMenu, .blueMenu, .yelMenu').hover(function (){
   $('.cursor').css({
     'backgroundImage': 'url(images/cursorWhite.svg)',
     'transform': 'scale(1) translate(10%, 10%)',
