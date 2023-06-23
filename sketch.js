@@ -1,4 +1,3 @@
-// contacts
 let conTog = document.querySelector('.contacts-tog');
 let con = document.querySelector('.contacts');
 let conCov = [...document.querySelectorAll('.contacts-cover')];
