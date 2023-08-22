@@ -109,7 +109,7 @@ h1{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonBlueMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -120,11 +120,9 @@ h1{
 }
 #evn a{
   transform: rotate(37deg);
-  top: 26vh;
-  left: 3vw;
   position: absolute;
-  color: #FFFFFF;
-  width: 25vw;
+  width: 100%;
+  height: 100%;
 }
 
 .redMenu{
@@ -134,7 +132,7 @@ h1{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonRedMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -145,11 +143,9 @@ h1{
 }
 #exc a{
   transform: rotate(-37.5deg);
-  top: 25vh;
-  left: 21vw;
   position: absolute;
-  color: #FFFFFF;
-  width: 25vw;
+  width: 100%;
+  height: 100%;
 }
 
 .orgMenu{
@@ -158,7 +154,7 @@ h1{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonOrgMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -169,11 +165,9 @@ h1{
 }
 #wrk a{
   transform: rotate(-90deg);
-  top: 27vh;
-  left: 9vw;
   position: absolute;
-  color: #FFFFFF;
-  width: 31vw;
+  width: 100%;
+  height: 100%;
 }
 .yelMenu{
   transform: rotate(135deg);
@@ -182,7 +176,7 @@ h1{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonYelMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -193,13 +187,10 @@ h1{
 }
 #shp a{
   transform: rotate(-90deg);
-  top: 27vh;
-  left: 8vw;
   position: absolute;
-  color: #FFFFFF;
-  width: 33vw;
+  width: 100%;
+  height: 100%;
 }
-
 a{
   font-family: 'NeutralFace-Bold';
   text-decoration: underline;

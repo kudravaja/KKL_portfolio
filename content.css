@@ -250,6 +250,12 @@ html,body{
   background-image: url("./images/blueMenu.svg");
   transition: 0.5s;
 }
+#evn a{
+  transform: rotate(37deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 .redMenu{
   transform: rotate(45deg);
@@ -267,6 +273,12 @@ html,body{
   background-image: url("./images/redMenu.svg");
   transition: 0.5s;
 }
+#exc a{
+  transform: rotate(-37.5deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 .orgMenu{
   top: 43vh;
@@ -283,7 +295,12 @@ html,body{
   background-image: url("./images/orgMenu.svg");
   transition: 0.5s;
 }
-
+#wrk a{
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .yelMenu{
   transform: rotate(135deg);
   top: 51vh;
@@ -299,6 +316,12 @@ html,body{
 .yelMenu:hover{
   background-image: url("./images/yelMenu.svg");
   transition: 0.5s;
+}
+#shp a{
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #dribbble a{
