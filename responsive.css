@@ -156,15 +156,10 @@
     bottom: 7vh;
   }
   .blueMenu{
-    top: 2vh;
+    top: -10vh;
     left: 62vw;
     width: 50vw;
     height: 61vh;
-  }
-  #evn a{
-    top: 28.5vh;
-    left: 2.5vw;
-    width: 25vw;
   }
   .redMenu{
     top: -2vh;
@@ -172,33 +167,18 @@
     width: 50vw;
     height: 61vh;
   }
-  #exc a{
-    top: 25.5vh;
-    left: 17vw;
-    width: 19vw;
-  }
   .orgMenu{
     top: 43vh;
     left: -1vw;
     width: 50vw;
     height: 61vh;
   }
-  #wrk a{
-    top: 22vh;
-    left: 3.5vw;
-    width: 31vw;
-  }
   .yelMenu{
     transform: rotate(135deg);
-    top: 57vh;
-    left: 34vw;
+    top: 60vh;
+    left: 25vw;
     width: 50vw;
     height: 61vh;
-  }
-  #shp a{
-    top: 21vh;
-    left: 3vw;
-    width: 33vw;
   }
 }
 @media only screen and (min-width: 834px) and (max-width: 1439px){

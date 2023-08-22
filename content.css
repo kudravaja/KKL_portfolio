@@ -241,7 +241,7 @@ html,body{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonBlueMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -249,14 +249,6 @@ html,body{
 .blueMenu:hover{
   background-image: url("./images/blueMenu.svg");
   transition: 0.5s;
-}
-#evn a{
-  transform: rotate(37deg);
-  top: 26vh;
-  left: 3vw;
-  position: absolute;
-  color: #FFFFFF;
-  width: 25vw;
 }
 
 .redMenu{
@@ -266,7 +258,7 @@ html,body{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonRedMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -275,14 +267,6 @@ html,body{
   background-image: url("./images/redMenu.svg");
   transition: 0.5s;
 }
-#exc a{
-  transform: rotate(-37.5deg);
-  top: 25vh;
-  left: 21vw;
-  position: absolute;
-  color: #FFFFFF;
-  width: 25vw;
-}
 
 .orgMenu{
   top: 43vh;
@@ -290,7 +274,7 @@ html,body{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonOrgMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -299,14 +283,7 @@ html,body{
   background-image: url("./images/orgMenu.svg");
   transition: 0.5s;
 }
-#wrk a{
-  transform: rotate(-90deg);
-  top: 27vh;
-  left: 9vw;
-  position: absolute;
-  color: #FFFFFF;
-  width: 31vw;
-}
+
 .yelMenu{
   transform: rotate(135deg);
   top: 51vh;
@@ -314,7 +291,7 @@ html,body{
   position: absolute;
   width: 50vw;
   height: 61vh;
-  background-image: url("./images/whMenu.svg");
+  background-image: url("./images/nonYelMenu.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -322,14 +299,6 @@ html,body{
 .yelMenu:hover{
   background-image: url("./images/yelMenu.svg");
   transition: 0.5s;
-}
-#shp a{
-  transform: rotate(-90deg);
-  top: 27vh;
-  left: 8vw;
-  position: absolute;
-  color: #FFFFFF;
-  width: 33vw;
 }
 
 #dribbble a{
