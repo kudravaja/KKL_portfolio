@@ -204,11 +204,7 @@ a{
 
 .back{
   position: fixed;
-  background-color: #31CFF4;
-  background-image: url(images/blueArrow.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: min(48vw, 70vh);
+  background-image: url(images/events/события2.png);
   width: 100vw;
   height: 100vh;
 }
