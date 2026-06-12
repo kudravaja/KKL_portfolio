@@ -5,6 +5,10 @@ function init() {
   let nextBtn = document.querySelector(".card-slider .next");
   let prevBtn = document.querySelector(".card-slider .prev");
 
+  if (!items.length || !nextBtn || !prevBtn || !window.anime) {
+    return;
+  }
+
   let getCard = (item) => {
     return item.querySelector(".card");
   };
@@ -15,7 +19,10 @@ function init() {
 
   let setItems = () => {
     items.forEach((item, index) => {
-      getTitle(item).innerHTML = getTitle(item).textContent.replace(
+      const title = getTitle(item);
+      if (!title) return;
+
+      title.innerHTML = title.textContent.replace(
         /\S/g,
         "<span class='letter'>$&</span>"
       );
@@ -26,7 +33,7 @@ function init() {
         translateX: "100vw",
       });
 
-      anime.set(getTitle(item).querySelectorAll(".letter"), {
+      anime.set(title.querySelectorAll(".letter"), {
         clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
       });
     });
@@ -122,57 +129,61 @@ function init() {
 
 document.addEventListener("DOMContentLoaded", init);
 
-$('#item1').hover(function (){
-  $('.cursor').css({
-    'backgroundImage': 'url(images/cursorRed.svg)',
-    'transform': 'scale(2.5) translate(31%, 31%)',
-  })
-})
-$('#item2').hover(function (){
-  $('.cursor').css({
-    'backgroundImage': 'url(images/cursorOrange.svg)',
-    'transform': 'scale(2.5) translate(31%, 31%)',
-  })
-})
-$('#item3').hover(function (){
-  $('.cursor').css({
-    'backgroundImage': 'url(images/cursorBlue.svg)',
-    'transform': 'scale(2.5) translate(31%, 31%)',
-  })
-})
-$('#item4').hover(function (){
-  $('.cursor').css({
-    'backgroundImage': 'url(images/cursorYellow.svg)',
-    'transform': 'scale(2.5) translate(31%, 31%)',
-  })
-})
-$('.title').hover(function (){
-  $('.cursor').css({
-    'backgroundImage': 'url(images/cursorBlack.svg)',
-    'transform': 'scale(1)',
-  })
-})
+if (window.jQuery) {
+  $('#item1').hover(function() {
+    $('.cursor').css({
+      backgroundImage: 'url(images/cursorRed.svg)',
+      transform: 'scale(2.5) translate(31%, 31%)',
+    });
+  });
+  $('#item2').hover(function() {
+    $('.cursor').css({
+      backgroundImage: 'url(images/cursorOrange.svg)',
+      transform: 'scale(2.5) translate(31%, 31%)',
+    });
+  });
+  $('#item3').hover(function() {
+    $('.cursor').css({
+      backgroundImage: 'url(images/cursorBlue.svg)',
+      transform: 'scale(2.5) translate(31%, 31%)',
+    });
+  });
+  $('#item4').hover(function() {
+    $('.cursor').css({
+      backgroundImage: 'url(images/cursorYellow.svg)',
+      transform: 'scale(2.5) translate(31%, 31%)',
+    });
+  });
+  $('.title').hover(function() {
+    $('.cursor').css({
+      backgroundImage: 'url(images/cursorBlack.svg)',
+      transform: 'scale(1)',
+    });
+  });
+}
 
-gsap.from(".card", 1, {
-  bottom: "-1000%",
-  opacity: 0,
-  ease: Expo.easeInOut,
-});
-gsap.from(".name", 1, {
-  opacity: 0,
-  ease: Expo.easeInOut,
-  delay: 1,
-});
-gsap.from(".nav", 2, {
-  opacity: 0,
-  ease: Expo.easeInOut,
-  delay: 1,
-});
-gsap.from(".title", 1, {
-  opacity: 0,
-  ease: Expo.easeInOut,
-  delay: 0.5,
-});
+if (window.gsap && window.Expo) {
+  gsap.from(".card", 1, {
+    bottom: "-1000%",
+    opacity: 0,
+    ease: Expo.easeInOut,
+  });
+  gsap.from(".name", 1, {
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 1,
+  });
+  gsap.from(".nav", 2, {
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 1,
+  });
+  gsap.from(".title", 1, {
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 0.5,
+  });
+}
 
 $(document).ready( function() {
   $("#chick").on("click",function() {
@@ -194,11 +205,11 @@ $(document).ready( function() {
     $("#chick4").css("display", "none");
   });
 });
-let clickCounter=0;
-$(document).ready( function() {
-  $("#chick5").on("click",function() {
+let clickCounter = 0;
+$(document).ready(function() {
+  $("#chick5").on("click", function() {
     clickCounter++;
-    if (clickCounter==2) {
+    if (clickCounter === 2) {
      $(".hurray").css('display', 'block');
     }
     $("#chick5").css('background-image', 'url(./images/chickens/chicken.svg)');
@@ -260,19 +271,21 @@ let conTog = document.querySelector('.contacts-tog');
 let con = document.querySelector('.contacts');
 let conCov = [...document.querySelectorAll('.contacts-cover')];
 
-conTog.addEventListener('click', toggleCon)
+if (conTog && con) {
+    conTog.addEventListener('click', toggleCon);
+}
 
 function toggleCon(){
-    if(menu.classList.contains('active')){
+    if(con.classList.contains('active')){
         conTog.classList.remove('active');
         toggleConWraps(false);
         setTimeout(() => {
-            con.classList.remove('active')
+            con.classList.remove('active');
         }, 300)
     }else{
         conTog.classList.add('active');
         setTimeout(() => {
-            con.classList.add('active')
+            con.classList.add('active');
         }, 300)
         setTimeout(() => {
             toggleConWraps(true);

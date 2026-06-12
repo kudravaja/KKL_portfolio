@@ -1,6 +1,10 @@
-let scrollable = document.querySelector('.scrollable');
-let content = document.querySelector('.content');
-let imgSections = [...document.querySelectorAll('.img-section')];
+const scrollable = document.querySelector('.scrollable');
+const content = document.querySelector('.content');
+const imgSections = [...document.querySelectorAll('.img-section')];
+
+if (!scrollable || !content || !imgSections.length) {
+  throw new Error('Events carousel markup is missing.');
+}
 
 let target = 1;
 let reverse = false;
@@ -8,18 +12,17 @@ let reverse = false;
 let clonesWidth;
 let contentWidth;
 let clones = [];
-let scrollPos = 1;
 
 let contentHover = false;
 let req;
-let images = [...document.querySelectorAll('.imgdiv')];
+const images = [...document.querySelectorAll('.imgdiv')];
 
 imgSections.forEach(item => {
   let clone = item.cloneNode(true);
   clone.classList.add('clone');
   content.appendChild(clone);
   clones.push(clone);
-})
+});
 
 function init(){
     document.body.style.height = `${content.getBoundingClientRect().width}px`;
@@ -31,7 +34,7 @@ function getClonesWidth(){
     let width = 0;
     clones.forEach(clone => {
       width += clone.offsetWidth;
-    })
+    });
     return width;
 }
 
@@ -53,29 +56,27 @@ function scroll(){
     }else{
         target++
     }
-    window.scrollTo(0, target)
+    window.scrollTo(0, target);
     scrollable.style.transform = `translateX(-${target}px)`;
-    requestAnimationFrame(scroll)
+    req = requestAnimationFrame(scroll);
 }
 
 function onLoad(){
     cancelAnimationFrame(req);
-    calaculateDimensions()
-    scrollPos = 1;
+    calculateDimensions();
+    init();
+    target = 1;
     scroll();
 }
 
-function calaculateDimensions(){
+function calculateDimensions(){
     contentWidth = content.getBoundingClientRect().width;
     clonesWidth = getClonesWidth();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
     setTimeout(() => {
         window.scrollTo(0, 1);
-    }, 200)
-    scroll()
-})
-
-onLoad()
+    }, 200);
+    onLoad();
+});

@@ -204,7 +204,11 @@ a{
 
 .back{
   position: fixed;
-  background-image: url(images/events/события2.png);
+  background-color: #31CFF4;
+  background-image: url(images/events/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: min(48vw, 70vh);
   width: 100vw;
   height: 100vh;
 }
