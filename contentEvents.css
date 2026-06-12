@@ -40,7 +40,7 @@ body {
   height: 4vh;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url(images/blueArrow.svg);
+  background-image: url(images/events/события2.png);
 }
 .nav.active {
   display: none;
