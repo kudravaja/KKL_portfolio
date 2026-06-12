@@ -1,33 +1,42 @@
-gsap.registerPlugin(ScrollTrigger);
+if (window.gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
-let bgVvideo = document.querySelector("#bgVideo");
+const bgVideo = document.querySelector("#bgVideo");
 
-// bgVideo.pause();
-// bgVideo.currentTime = 0;
+if (bgVideo && window.gsap && window.ScrollTrigger) {
+  const setupVideoScroll = () => {
+    const duration = bgVideo.duration || 8.7;
+    const sections = gsap.utils.toArray(".step");
 
-let sections = gsap.utils.toArray(".step");
-sections.forEach((step, i) => {
+    sections.forEach((step, i) => {
+      ScrollTrigger.create({
+        trigger: step,
+        end: "+=1000",
+      });
 
-  ScrollTrigger.create({
-      trigger: step,
-      end: "+=1000",
-  });
-
-  gsap.fromTo(bgVideo, { currentTime: 1 * i }, {
-      scrollTrigger: {
+      gsap.fromTo(bgVideo, { currentTime: i }, {
+        scrollTrigger: {
           trigger: step,
-          start: "0",
+          start: "top top",
           scrub: 1,
-      },
-      currentTime: 8.7 * (i + 1),
-      ease: "none",
-  });
-});
+        },
+        currentTime: duration * (i + 1),
+        ease: "none",
+      });
+    });
 
-// уменьшение видео
-gsap.to("#bgVideo", {
-    scrollTrigger: {
-        scrub: true
-    },
-    scale: 0.65
-})
+    gsap.to("#bgVideo", {
+      scrollTrigger: {
+        scrub: true,
+      },
+      scale: 0.65,
+    });
+  };
+
+  if (bgVideo.readyState >= 1) {
+    setupVideoScroll();
+  } else {
+    bgVideo.addEventListener("loadedmetadata", setupVideoScroll, { once: true });
+  }
+}
